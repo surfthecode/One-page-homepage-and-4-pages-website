@@ -1,0 +1,109 @@
+@import "./styles.css";
+
+.hero::before {
+  background-image: url("../img/blends_hero.jpg");
+  background-size: cover;
+  background-attachment: unset;
+}
+
+.hero {
+  padding-top: 7rem;
+}
+
+.hero-content {
+  line-height: 2.6rem;
+}
+
+.hero-btn {
+  margin-top: 7rem;
+}
+
+.content-title {
+  margin: 0 auto;
+  padding: 3rem 3rem;
+  text-align: left;
+  position: relative;
+}
+
+.content-title::before {
+  content: "";
+  background-color: rgba(230, 226, 221, 1);
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.card:nth-of-type(odd)::before {
+  background-color: unset;
+}
+
+.card:nth-of-type(even)::before {
+  content: "";
+  background-color: rgba(230, 226, 221, 1);
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.card-img {
+  max-height: 20rem;
+}
+
+.card-content {
+  text-align: left;
+}
+
+@media (min-width: 780px) {
+  .hero::before {
+    width: 50%;
+    height: 100%;
+    opacity: 1;
+  }
+
+  .hero-title::before {
+    content: "";
+    background-image: none;
+  }
+
+  .hero {
+    margin-top: 8rem;
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-width: 160rem;
+  }
+
+  .hero-container {
+    width: 45%;
+    text-align: left;
+  }
+
+  .content-title {
+    margin-top: 4rem;
+  }
+
+  .first-card {
+    content: url("../img/Ethiopian\ Yirgacheffe.jpg");
+  }
+
+  .second-card {
+    content: url("../img/Sumatra\ Mandheling.jpg");
+  }
+
+  .third-card {
+    content: url("../img/Costa\ Rican\ Tarrazu.jpg");
+  }
+
+  .fourth-card {
+    content: url("../img/Colombian\ Supremo.jpeg");
+  }
+}

@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Intro Rust G";
+  src: url("../fonts/IntroRustG-Base2Line.ttf");
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.rust {
+  font-family: "Intro Rust G", sans-serif;
+}
+
+.nav-links,
+.different {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.hero-title {
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+}
+
+.hero-content {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+.hero-btn {
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+
+.content-title {
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.6rem;
+}
+
+.card-title {
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+}
+
+.card-content {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+.cta-btn {
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+
+.address-items,
+.address-content,
+.copyright {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}

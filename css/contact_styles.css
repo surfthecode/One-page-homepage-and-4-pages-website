@@ -1,0 +1,145 @@
+@import "./styles.css";
+
+iframe {
+  display: none;
+}
+
+.hero::before {
+  background-image: url("../img/contact_hero.jpg");
+  background-size: cover;
+  background-attachment: unset;
+}
+
+.hero-content {
+  line-height: 2.6rem;
+}
+
+.content-title {
+  position: relative;
+  margin: 0 auto;
+  padding: 4rem 3rem;
+}
+
+.content-title::before {
+  content: "";
+  background-color: rgba(230, 226, 221, 1);
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.card {
+  padding-top: 0rem;
+}
+
+.card-content {
+  margin-top: 0rem;
+}
+
+.form-label {
+  visibility: hidden;
+}
+
+#contact-form {
+  margin-top: 3rem;
+}
+
+.form-input {
+  display: block;
+  text-align: left;
+  font-size: 1.6rem;
+  color: rgba(71, 66, 66, 1);
+  padding-left: 2rem;
+  width: 100%;
+  max-width: 50rem;
+  height: 3.8rem;
+  background: rgba(230, 226, 221, 1);
+  box-shadow: inset 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  margin: auto;
+}
+
+.form-textarea {
+  display: block;
+  text-align: left;
+  font-size: 1.6rem;
+  color: rgba(71, 66, 66, 1);
+  padding-left: 2rem;
+  padding-top: 1.5rem;
+  width: 100%;
+  max-width: 50rem;
+  background: rgba(230, 226, 221, 1);
+  box-shadow: inset 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: auto;
+}
+
+.form-input::placeholder {
+  text-align: left;
+  color: rgba(71, 66, 66, 1);
+}
+
+.form-textarea::placeholder {
+  text-align: left;
+  color: rgba(71, 66, 66, 1);
+}
+
+.cta-btn {
+  width: 100%;
+  margin-top: 3rem;
+  max-width: 50rem;
+}
+
+.second-content {
+  margin-top: 3rem;
+}
+
+@media (min-width: 780px) {
+  .hero {
+    margin-top: 5rem;
+  }
+  .hero-title::before {
+    content: "";
+    background-image: none;
+  }
+
+  .hero::before {
+    background-image: url("../img/contact_hero.jpg");
+    opacity: 1;
+  }
+
+  .hero-title,
+  .hero-content,
+  .hero-btn {
+    visibility: hidden;
+  }
+
+  .content-title {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  #contact-form {
+    width: 100%;
+    max-width: 50rem;
+  }
+
+  .cta-btn {
+    background-color: rgba(30, 30, 30, 1);
+    color: rgba(207, 112, 15, 1);
+    border-color: rgba(207, 112, 15, 1);
+  }
+
+  iframe {
+    display: block;
+  }
+}
